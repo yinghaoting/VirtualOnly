@@ -64,7 +64,7 @@ int main()
 	FILE* cppf;
 	freopen_s(&keyf, "KEY.key", "w", stdout);
 	srand(time(0));
-	a = static_cast<long long>(rand()) * 114514;
+	a = 1887415157;//如果需要修改为随机密钥，修改此处即可 
 	cout << a;
 	fclose(stdout);
 	freopen_s(&cppf, "template.cpp", "w", stdout);
@@ -72,7 +72,7 @@ int main()
 	fclose(stdout);
 	freopen_s(&cono, "CON", "w", stdout);
 	cout << "随机钥匙为: " << a << endl;
-	cout << "密钥已生成，储存在KEY.key中" << endl;
+	cout << "KEY.key已生成" << endl;
 	cout << "C++代码模板已生成，储存在template.cpp中，您可以自行修改文件名" << endl;
 	cout << "按任意键结束……" << endl;
 	_getch();
@@ -134,7 +134,7 @@ void out()
 	cout << "			break;" << endl;
 	cout << "		}" << endl;
 	cout << "	}" << endl;
-	cout << "	cout << \"再次强调，此程序真的很危险，您必须确保在虚拟机上运行它，且虚拟机可能会被破坏\" << endl;" << endl;
+	cout << "	cout << \"再次强调，此程序真的很危险，您必须确保在虚拟机上运行它，且保证虚拟机已备份\" << endl;" << endl;
 	cout << "	cout << \"接下来进行最后的确认：\" << endl;" << endl;
 	cout << "	cout << \"请您输入: \" << keyn << \"    \";" << endl;
 	cout << "	long long anskey;" << endl;

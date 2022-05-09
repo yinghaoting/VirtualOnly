@@ -2,9 +2,9 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
-#include<conio.h> 
+#include<conio.h>
 using namespace std;
-#define keyn 100
+#define keyn 1887415157
 FILE* cono;
 FILE* coni;
 bool key()//此函数用于进行确认，如果需要生成无需确认的程序，return 1即可
@@ -81,3 +81,4 @@ int main()
 	_getch();
 	return 0;
 }
+
